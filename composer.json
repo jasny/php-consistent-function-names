@@ -1,0 +1,18 @@
+{
+    "name": "jasny/php-consistent-function-names",
+    "description": "Userland implementation of PHP RFC: Consistent Function Names",
+    "homepage": "https://wiki.php.net/rfc/consistent_function_names",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "ext-pcre": "*",
+        "jetbrains/phpstorm-stubs": "*"
+    },
+    "suggest": {
+        "jasny/php-functions": "A set PHP functions that should have been part of PHP's core libraries."
+    },
+    "autoload": {
+        "files": ["src/functions.php"]
+    }
+}
