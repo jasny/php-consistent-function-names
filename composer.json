@@ -1,7 +1,8 @@
 {
-    "name": "jasny/php-consistent-function-names",
+    "name": "jasny/consistent-function-names",
     "description": "Userland implementation of PHP RFC: Consistent Function Names",
     "homepage": "https://wiki.php.net/rfc/consistent_function_names",
+    "license": "MIT",
     "require": {
         "php": ">=7.1.0"
     },
