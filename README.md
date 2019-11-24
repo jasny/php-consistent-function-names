@@ -18,7 +18,7 @@ Please read the RCF for more information: https://wiki.php.net/rfc/consistent_fu
 
 ## Installation
 
-    composer require jasny/php-consistent-function-names
+    composer require jasny/consistent-function-names
 
 ## Functions
 
