@@ -1311,6 +1311,20 @@ function gd_affine_matrix_concat(array $m1, array $m2)
 }
 
 /**
+ * Return an image containing the affine tramsformed src image, using an optional clipping area
+ * @link https://secure.php.net/manual/en/function.imageaffinematrixget.php
+ * @param int $type <p> One of <b>IMG_AFFINE_*</b> constants.
+ * @param mixed $options [optional]
+ * @return array|bool Array with keys 0 to 5 and float values or <b>FALSE</b> on failure.
+ * @since 5.5.0
+ */
+
+function gd_affine_matrix_get ($type, $options = null)
+{
+    return imageaffinematrixget($type, $options);
+}
+
+/**
  * Set the blending mode for an image
  * @link https://php.net/manual/en/function.imagealphablending.php
  * @param resource $image 
@@ -3382,6 +3396,24 @@ function gd_save_alpha ($image, $saveflag)
 }
 
 /**
+ * @since 5.5.0
+ * Scale an image using the given new width and height
+ * @link https://secure.php.net/manual/en/function.imagescale.php
+ * @param resource $image <p>
+ * An image resource, returnd by one of the image creation functions, such as {@link https://secure.php.net/manual/en/function.imagecreatetruecolor.php imagecreatetruecolor()}.
+ * </p>
+ * @param int $new_width
+ * @param int $new_height [optional]
+ * @param int $mode [optional] One of <b>IMG_NEAREST_NEIGHBOUR</b>, <b>IMG_BILINEAR_FIXED</b>, <b>IMG_BICUBIC</b>, <b>IMG_BICUBIC_FIXED</b> or anything else (will use two pass).
+ * @return resource|bool Return scaled image resource on success or <b>FALSE</b> on failure.
+ */
+
+function gd_scale ($image, $new_width, $new_height = -1, $mode = IMG_BILINEAR_FIXED)
+{
+    return imagescale($image, $new_width, $new_height, $mode);
+}
+
+/**
  * Set the brush image for line drawing
  * @link https://php.net/manual/en/function.imagesetbrush.php
  * @param resource $image 
@@ -4133,6 +4165,22 @@ function ctype_is_lower ($text)
 function ctype_is_print ($text)
 {
     return ctype_print($text);
+}
+
+/**
+ * Check for any printable character which is not whitespace or an
+ * @since 4.0.4
+ * @since 5.0 alphanumeric character
+ * @link https://php.net/manual/en/function.ctype-punct.php
+ * @param string $text <p>
+ * The tested string.
+ * </p>
+ * @return bool <b>TRUE</b> if every character in <i>text</i>
+ * is printable, but neither letter, digit or blank, <b>FALSE</b> otherwise.
+ */
+function ctype_is_punct ($text)
+{
+    return ctype_punct($text);
 }
 
 /**
