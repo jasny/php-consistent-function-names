@@ -3,7 +3,7 @@
 Userland implementation of [PHP RFC: Consistent Function Names](https://wiki.php.net/rfc/consistent_function_names). It
 creates aliases with more consistent names.
 
-There are many functions that named before naming standard in [CODING_STANDARDS](https://github.com/php/php-src/blob/master/CODING_STANDARDS).
+There are many functions that named before naming standard in [CODING_STANDARDS](https://github.com/php/php-src/blob/master/CODING_STANDARDS.md).
 Therefore, PHP has function names like `phpversion()` and `htmlspecialchars()`.
 
 We have many function names that comply [IEEE 1003.1](http://pubs.opengroup.org/onlinepubs/9699919799/idx/is.html)
