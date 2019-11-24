@@ -189,6 +189,7 @@ sapi_request_headers getallheaders
 apache_virtual virtual
 apache_get_env apache_getenv
 apache_set_env apache_setenv
+date_format date
 date_get getdate
 date_check checkdate
 time_part idate
@@ -449,3 +450,4 @@ php_include_path_restore restore_include_path
 php_included_files get_included_files
 php_required_files get_required_files
 php_time_limit set_time_limit
+is_set isset
