@@ -162,17 +162,17 @@ gd_jpeg2wbmp jpeg2wbmp
 gd_png2wbmp png2wbmp
 exif_image_type exif_imagetype
 exif_tag_name exif_tagname
-ctype_alnum ctype_isalnum
-ctype_alpha ctype_isalpha
-ctype_cntrl ctype_iscntrl
-ctype_digit ctype_isdigit
-ctype_graph ctype_isgraph
-ctype_lower ctype_islower
-ctype_print ctype_isprint
-ctype_punct ctype_ispunct
-ctype_space ctype_isspace
-ctype_upper ctype_isupper
-ctype_xdigit ctype_isxdigit
+ctype_is_alnum ctype_alnum
+ctype_is_alpha ctype_alpha
+ctype_is_cntrl ctype_cntrl
+ctype_is_digit ctype_digit
+ctype_is_graph ctype_graph
+ctype_is_lower ctype_lower
+ctype_is_print ctype_print
+ctype_is_punct ctype_punct
+ctype_is_space ctype_space
+ctype_is_upper ctype_upper
+ctype_is_xdigit ctype_xdigit
 mb_decode_mime_header mb_decode_mimeheader
 mb_decode_numeric_entity mb_decode_numericentity
 mb_encode_mime_header mb_encode_mimeheader
@@ -206,18 +206,18 @@ time_from_string strtotime
 dir_rename rename
 dir_delete rmdir
 dir_create mkdir
-dir_chown← (IEEE)
+dir_chown chown (IEEE)
 dir_chmod chmod
-dir_chgrp chgrp(IEEE)
+dir_chgrp chgrp (IEEE)
 dir_name dirname
 dir_glob glob
-dir_set chdir(IEEE)
+dir_set chdir (IEEE)
 dir_chroot chroot
-dir_get getcwd(IEEE)
+dir_get getcwd (IEEE)
 dir_open opendir
 dir_close closedir
-dir_read readdir(IEEE)
-dir_rewind rewinddir(IEEE)
+dir_read readdir (IEEE)
+dir_rewind rewinddir (IEEE)
 dir_scan scandir
 function_declared get_defined_functions
 function_create create_function
@@ -336,8 +336,8 @@ array_sort_natural_case natcasesort
 array_in in_array
 array_range range
 array_shuffle shuffle
-array_find mixed
-array_key_find bool
+array_find array_search
+array_key_find array_key_exists
 link link
 link_info linkinfo
 link_stat lstat
@@ -367,7 +367,7 @@ file_temp_name tempnam
 file_copy copy
 file_stat stat
 file_stat_clear_cache clearstatcache
-file_move_uploaded move_upload_file
+file_move_uploaded move_uploaded_file
 file_delete unlink
 file_rename rename
 fopen fopen
