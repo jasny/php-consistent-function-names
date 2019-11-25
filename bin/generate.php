@@ -17,7 +17,7 @@ $stubFiles = glob(dirname(__DIR__) . "/vendor/jetbrains/phpstorm-stubs/*/*.php")
 $stubs = [];
 $argLists = [];
 
-$regexp = '~\/\*\*(?:\n\s\*.*)+\nfunction (\w+) \((.*?)\)(?= {})~m';
+$regexp = '~\/\*\*(?:\n\s\*.*)+\n+function\s+(\w+)\s*\((.*?)\):*\w*(?=\s*{\s*})~m';
 
 foreach ($stubFiles as $file) {
     $contents = file_get_contents($file);
