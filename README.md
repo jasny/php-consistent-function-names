@@ -516,7 +516,6 @@ array_sort | sort | Sort values
 **array_in** | in_array | 
 array_range | range | Create array of range 
 array_shuffle | shuffle | Randomize values 
-**array_in** | in_array | 
 **array_find** | array_search | 
 **array_key_find** | array_key_exists | 
 
